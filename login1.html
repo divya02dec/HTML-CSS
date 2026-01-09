@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyStore | Home</title>
+
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/263/263142.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f3f3f3;
+        color: #111;
+      }
+
+      /* HEADER */
+      header {
+        background: #131921;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+      }
+
+      header img {
+        width: 42px;
+      }
+
+      .location {
+        min-width: 140px;
+      }
+
+      .small {
+        font-size: 12px;
+        color: #ccc;
+      }
+
+      .bold {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .search {
+        flex: 1;
+        display: flex;
+        min-width: 220px;
+      }
+
+      .search input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+      }
+
+      .search button {
+        padding: 8px 12px;
+        border: none;
+        background: #febd69;
+        cursor: pointer;
+      }
+
+      .header-right {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .cart {
+        position: relative;
+      }
+
+      .cart span {
+        position: absolute;
+        top: -6px;
+        right: -8px;
+        background: red;
+        color: #fff;
+        font-size: 11px;
+        padding: 2px 5px;
+        border-radius: 50%;
+      }
+
+      /* NAV */
+      nav {
+        width: 100%;
+        background: #232f3e;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 14px;
+        font-size: 14px;
+      }
+
+      /* BANNER */
+      .banner img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* SECTION */
+      .section {
+        padding: 30px 20px;
+      }
+
+      .section h2 {
+        margin-bottom: 16px;
+      }
+
+      /* CARDS */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: #fff;
+        padding: 14px;
+        border-radius: 4px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card h4 {
+        margin: 10px 0 6px;
+        font-size: 15px;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .price {
+        margin-top: 6px;
+        font-weight: bold;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #131921;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer a {
+        color: #fff;
+        margin: 0 8px;
+        font-size: 18px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .header-right {
+          display: none;
+        }
+
+        .banner img {
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        nav {
+          justify-content: center;
+        }
+
+        .search {
+          width: 100%;
+        }
+
+        .banner img {
+          height: 220px;
+        }
+
+        .card img {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" />
+
+      <div class="location">
+        <div class="small">Delivering to</div>
+        <div class="bold">
+          <i class="fa fa-location-dot"></i> Select location
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search MyStore" />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+
+      <div class="header-right">
+        <div><i class="fa fa-globe"></i> EN</div>
+        <div>
+          <div class="small">Hello, sign in</div>
+          <div class="bold">Account & Lists</div>
+        </div>
+        <div class="cart">
+          <i class="fa fa-cart-shopping"></i>
+          <span>0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+      <a href="contact page.html">Contact</a>
+      <a href="registrationform.html">Register</a>
+      <a href="index.html">Logot</a>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <img
+        src="https://feedvisor.com/wp-content/uploads/2021/03/Tips-to-Optimize-Your-Amazon-Brand-Store-for-Mobile-BLOG.jpg"
+        alt="Banner" />
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="section">
+      <h2>Shop by Category</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" />
+          <h4>Home Decor</h4>
+          <p>Modern & stylish decor</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" />
+          <h4>Laptops</h4>
+          <p>Work & gaming laptops</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" />
+          <h4>Office Furniture</h4>
+          <p>Comfortable workspace</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" />
+          <h4>Beauty</h4>
+          <p>Skin & personal care</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section">
+      <h2>Recommended for You</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea" />
+          <h4>Bathroom Set</h4>
+          <p class="price">₹1,299</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1" />
+          <h4>Smart TV</h4>
+          <p class="price">₹29,999</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" />
+          <h4>Handbag</h4>
+          <p class="price">₹999</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" />
+          <h4>Footwear</h4>
+          <p class="price">₹1,499</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 MyStore. All Rights Reserved</p>
+      <div>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

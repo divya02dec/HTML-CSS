@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .banner {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://t3.ftcdn.net/jpg/02/71/06/36/360_F_271063601_bF8ukMjLRIjK72cHpO79NJNY1bgmUACv.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .inner-banner {
+        padding: 20px;
+      }
+
+      .form {
+        max-width: 420px;
+        width: 100%;
+        padding: 25px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(8px);
+      }
+
+      .content h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .name .label {
+        display: grid;
+        grid-template-columns: 140px 15px 1fr;
+        align-items: center;
+        gap: 5px;
+        margin: 15px 0;
+        font-size: 16px;
+      }
+
+      .colon {
+        font-weight: bold;
+        text-align: center;
+      }
+      /* added */
+      .radio-btn {
+        display: flex;
+        width: 100px;
+      }
+      /* added */
+      .radio-btn input {
+        margin: 0 10px;
+      }
+
+      .name input {
+        width: 100%;
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .name input:focus {
+        outline: none;
+      }
+
+      .submit {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .submit input {
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .submit input:hover {
+        background: #3da3eb;
+        color: white;
+      }
+
+      .content a {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .content a:hover {
+        color: blue;
+      }
+
+      @media (max-width: 480px) {
+        .form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin-right: 80px;
+          padding: 10px 5px;
+        }
+
+        .name .label {
+          grid-template-columns: 1fr;
+        }
+
+        .colon {
+          display: none;
+        }
+
+        .name label {
+          margin-bottom: 5px;
+        }
+
+        .submit input {
+          width: 100px;
+          height: 35px;
+        }
+      }
+      @media (max-width: 292px) {
+        .colon {
+          display: none;
+        }
+
+        .name label {
+          margin-bottom: 5px;
+        }
+
+        .submit input {
+          width: 70px;
+          height: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contact">
+      <div class="banner">
+        <div class="inner-banner">
+          <div class="form">
+            <div class="content">
+              <h1><u>Registration Here</u></h1>
+
+              <div class="name">
+                <div class="label">
+                  <label>First Name</label>
+                  <div class="colon">:</div>
+                  <input type="text" placeholder="First Name" required />
+                </div>
+
+                <div class="label">
+                  <label>DOB</label>
+                  <div class="colon">:</div>
+                  <input type="date" placeholder="DOB" required />
+                </div>
+
+                <div class="label">
+                  <label>Email</label>
+                  <div class="colon">:</div>
+                  <input type="email" placeholder="Email" required />
+                </div>
+                <div class="label">
+                  <label>Mobile Number</label>
+                  <div class="colon">:</div>
+                  <input type="password" placeholder="Mobile Number" required />
+                </div>
+                <div class="label">
+                  <label>Gender</label>
+                  <div class="colon">:</div>
+                  <!-- two radio buttons placed in seperate div -->
+                  <div class="radio-btn">
+                    <input type="radio" name="gender" value="male" /><label
+                      for=""
+                      >Male</label
+                    >
+                    <input type="radio" name="gender" value="female" /><label
+                      for=""
+                      >Female</label
+                    >
+                  </div>
+                </div>
+
+                <div class="label">
+                  <label>Password</label>
+                  <div class="colon">:</div>
+                  <input type="password" placeholder="Password" required />
+                </div>
+                <div class="label">
+                  <label>Confirm Password</label>
+                  <div class="colon">:</div>
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    required />
+                </div>
+              </div>
+
+              <div class="submit">
+                <a href="login1.html"><input type="submit" /></a>
+              </div>
+
+              <a href="index.html">New User Registration Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

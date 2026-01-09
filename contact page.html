@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Us</title>
+
+    <style>
+      /* ---------- BASE STYLES ---------- */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 24px;
+        background-color: rgba(255, 192, 203, 0.139);
+      }
+
+      .a {
+        max-width: 1000px;
+        padding: 20px;
+        margin-top: 80px;
+        margin-left: 80px;
+      }
+
+      .b {
+        display: flex;
+        gap: 35px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      img {
+        width: 420px;
+        border-radius: 8px;
+        margin-top: 75px;
+        display: block;
+      }
+
+      form {
+        min-width: 300px;
+        max-width: 460px;
+        width: 100%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      h1 {
+        margin-left: 16px;
+        font-size: 22px;
+        text-align: center;
+      }
+
+      form .c {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      input,
+      textarea {
+        padding: 10px 12px;
+        border: 0.5px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        border-bottom: 1px solid gray;
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 10px 14px;
+        border: none;
+        background: #2b6cb0;
+        color: white;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      button a {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* ---------- RESPONSIVE MEDIA QUERIES ---------- */
+
+      /* Small Laptops */
+      @media (max-width: 1024px) {
+        .a {
+          margin-left: 20px;
+          margin-top: 40px;
+        }
+
+        img {
+          width: 380px;
+          margin-top: 40px;
+        }
+      }
+
+      /* Tablets */
+      @media (max-width: 768px) {
+        body {
+          padding: 16px;
+        }
+
+        .a {
+          margin: 0;
+          padding: 10px;
+        }
+
+        .b {
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: 25px;
+        }
+
+        img {
+          width: 90%;
+          margin-top: 0;
+        }
+
+        form {
+          max-width: 520px;
+        }
+      }
+
+      /* Mobile Phones */
+      @media (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+
+        input,
+        textarea {
+          font-size: 13px;
+          padding: 8px 10px;
+        }
+
+        button {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="a">
+      <div class="b">
+        <img
+          src="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2025/01/customer-care-1680x1120-1.jpg?resize=1024,683"
+          alt="customer care" />
+
+        <form>
+          <h1>Contact Us</h1>
+
+          <div class="c">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+
+          <div class="c">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="c">
+            <label>Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+          </div>
+
+          <button type="submit"><a href="thankyou page.html">Submit</a></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
